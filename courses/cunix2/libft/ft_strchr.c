@@ -1,4 +1,5 @@
-char *ft_strchr (const char *string, int symbol){
+#include <stddef.h>
+char *ft_strchr (/*const*/ char *string, int symbol){
 	//char ch = (char) symbol;
 	int i = 0;
 	while (string[i] != (char) symbol && string[i] != '\0'){

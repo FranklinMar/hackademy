@@ -19,7 +19,7 @@ char *ft_strtrim(char const *s) {
 	if (ptr == NULL){
 		return NULL;
 	}
-	for (int i = 0; i < end - beg; i++){
+	for (unsigned int i = 0; i < end - beg; i++){
 		ptr[i] = s[i + beg];
 	}
 	ptr[end - beg] = '\0';

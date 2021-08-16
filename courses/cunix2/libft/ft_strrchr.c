@@ -1,4 +1,5 @@
-char *ft_strrchr (const char *str, int ch) {
+#include <stddef.h>
+char *ft_strrchr (/*const*/ char *str, int ch) {
 	int i = -1;
 	char *p = NULL;
 	do {

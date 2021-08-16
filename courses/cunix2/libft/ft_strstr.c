@@ -1,4 +1,5 @@
-char *ft_strstr(const char *str1, const char *str2) {
+#include <stddef.h>
+char *ft_strstr(/*const*/ char *str1, const char *str2) {
 	/*int len2 = 0;
 	//int hash2 = 0;
 	while (*(str2 + len2)){

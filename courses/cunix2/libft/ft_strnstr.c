@@ -1,4 +1,5 @@
-char *ft_strnstr(const char *str1, const char *str2, unsigned int n) {
+#include <stddef.h>
+char *ft_strnstr(/*const*/ char *str1, const char *str2, unsigned int n) {
 	if (str1 == NULL || str2 == NULL || n == 0){
 		return NULL;
 	}
@@ -22,7 +23,7 @@ char *ft_strnstr(const char *str1, const char *str2, unsigned int n) {
 	char *p = NULL;
 	int j;
 	++n;
-	for (int i = 0; i < (n - len) && bol; i++){
+	for (unsigned int i = 0; i < (n - len) && bol; i++){
 		j = 0;
 		while (*(str1 + i + j) == *(str2 + j) ){
 			if (j == len - 1){

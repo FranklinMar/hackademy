@@ -5,10 +5,10 @@ void *ft_memmove(void *dest, const void *src, unsigned int n) {
 		return NULL;
 	}
 	char temp[n];
-	for (int i = 0; i < n; i++){
+	for (unsigned int i = 0; i < n; i++){
 		*(temp + i) = *( (char *)src + i);
 	}
-	for (int i = 0; i < n; i++){
+	for (unsigned int i = 0; i < n; i++){
 		*(p + i) = *(temp + i);
 	}
 	return dest;

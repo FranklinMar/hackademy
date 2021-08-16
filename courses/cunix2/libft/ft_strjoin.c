@@ -17,7 +17,7 @@ char *ft_strjoin(char const *s1, char const *s2) {
 		return NULL;
 	}
 	unsigned int condit = (len1 > len2) ? len1 : len2;
-	for (int i = 0; i < condit; i++){
+	for (unsigned int i = 0; i < condit; i++){
 		if (i < len1){
 			ptr[i] = s1[i];
 		}
